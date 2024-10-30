@@ -1,0 +1,9 @@
+.highlight {
+    background-color: #ffcccc;
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.text-danger {
+    color: #d9534f !important;
+}

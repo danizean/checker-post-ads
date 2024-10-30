@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools Pengecekan Judul dan Deskripsi Iklan</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Pengecekan Judul dan Deskripsi Iklan</h2>
+        
+        <form id="checkForm">
+            <div class="form-group">
+                <label for="title">Judul Iklan (Maksimal 40 karakter)</label>
+                <input type="text" class="form-control" id="title" placeholder="Masukkan judul iklan" maxlength="40" oninput="checkAd()">
+                <small id="titleFeedback" class="form-text text-muted"></small>
+            </div>
+            
+            <div class="form-group">
+                <label for="description">Deskripsi Iklan (Maksimal 125 karakter)</label>
+                <textarea class="form-control" id="description" rows="4" placeholder="Masukkan deskripsi iklan" maxlength="125" oninput="checkAd()"></textarea>
+                <small id="descriptionFeedback" class="form-text text-muted"></small>
+            </div>
+            
+            <button type="button" class="btn btn-primary" onclick="checkAd()">Cek Konten Iklan</button>
+        </form>
+
+        <div id="result" class="mt-4"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
